@@ -2240,20 +2240,22 @@ const arr = input.split("\n").map(Number);
 //Variable declaration
 let mostCalories = 0;
 let currentCalories = 0;
-let topThreeTotal = 0;
+let topThreeTotal = [];
 
     for (let i = 0; 0 <= arr.length; i++) {
         if (arr[i] === 0) {
             if (currentCalories > mostCalories) {
+                topThreeTotal.push(currentCalories);
                 mostCalories = currentCalories;
                 currentCalories = 0;
-                console.log(mostCalories);
+                //console.log(mostCalories);
             } else {
                 currentCalories = 0;
-                console.log(mostCalories);
+                //console.log(mostCalories);
                 continue;
             }
         } else {
             currentCalories += arr[i];
         }
     }
+   
