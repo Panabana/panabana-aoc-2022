@@ -1,4 +1,6 @@
 //Variable declarations
+playerTotal = 0;
+
 const opponentRock = A;
 const opponentPaper = B;
 const thisScissors = C;
@@ -25,6 +27,10 @@ function lose {
 }
 
 //Each game contains many rounds
-function game (opponent, player) {
-
+function gameRound (opponent, player) {
+    if (lose(opponent, player) === true) {
+        playerTotal += 0;
+    } else if (C, Y || B, X || A, Z) {
+        playerTotal += 3;
+    }
 }
