@@ -2259,3 +2259,22 @@ let topThreeTotal = [];
         }
     }
    
+
+
+/*
+THIS IS FOR INSPIRATION. PLS BE INSPIRED
+
+    function largestOfFour(arr) {
+        let extractor = [];
+        let largestArr = [];
+      
+        for (let i = 0; i < arr.length; i++) {
+          extractor = [...arr[i]];
+          largestArr.push(Math.max(...extractor));
+        }
+        return largestArr;
+      }
+      
+      largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+    
+*/
